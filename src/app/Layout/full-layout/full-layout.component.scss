@@ -1,0 +1,26 @@
+.side-bar-row{
+    min-height: 600px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.side-bar-col{
+    width: 240px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header-col{
+    flex: 1 1;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 769px){
+    .side-bar-col{
+        width:0 ;
+    }
+}

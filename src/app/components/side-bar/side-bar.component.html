@@ -1,0 +1,70 @@
+<mat-nav-list class="main-sidebar">
+    <div class="sidebar">
+        <div  class="vector">
+            <img src="../../assets/logo.png" class="logo" alt="">
+            <h5 class="main-title ml-5 text-align-center">Vision Education 
+                <br>Hub</h5>
+        </div> 
+        <mat-divider></mat-divider>
+         
+        <div class="search">
+            <mat-icon class="bi-search">search</mat-icon>
+
+            <input type="search" class="form-control text-search" placeholder="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </div>
+       <div>
+           <div style="margin-top: 18px;">
+            <a mat-list-item routerLink="/dashboard" routerLinkActivate="list-item-active">
+               
+                    <mat-icon>dashboard</mat-icon> dashboard   
+
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+            </a>
+          
+            <a mat-list-item routerLink="/event-management" routerLinkActivate="list-item-active">
+                <mat-icon>event</mat-icon>Event-Management
+            </a>
+            <a mat-list-item routerLink="/professor" routerLinkActivate="list-item-active">
+                <mat-icon>perm_identity</mat-icon>Professors<mat-icon>keyboard_arrow_down</mat-icon>
+            </a>
+    
+        <a mat-list-item routerLink="/student" routerLinkActivate="list-item-active">
+            <mat-icon>assignment_ind</mat-icon>Students<mat-icon>keyboard_arrow_down</mat-icon>
+        </a>
+        <a mat-list-item routerLink="/courses" routerLinkActivate="list-item-active">
+            <mat-icon>event</mat-icon>Courses	<mat-icon>keyboard_arrow_down</mat-icon>
+        </a>
+        <a mat-list-item routerLink="/library" routerLinkActivate="list-item-active">
+            <mat-icon>event</mat-icon> Library<mat-icon>keyboard_arrow_down</mat-icon>
+        </a>
+        <a mat-list-item routerLink="/department" routerLinkActivate="list-item-active">
+            <mat-icon>event</mat-icon> Department<mat-icon>keyboard_arrow_down</mat-icon>
+        </a>
+        <a mat-list-item routerLink="/staff" routerLinkActivate="list-item-active">
+            <mat-icon>event</mat-icon>Staff<mat-icon>keyboard_arrow_down</mat-icon>
+        </a>
+       </div>
+       
+    </div>
+    <!-- ----profile------>
+    <div class="profile-section ">
+        <div class="student-profile ml-3 ">
+            <img src="../../assets/student-profile.png" class="student-img" alt="">
+            <h2 class="s-name">Henna Baker's</h2>
+            <p class="gmail" style="color: rgba(0, 0, 0, 0.5);;">Henna Baker's@gmail.com</p>
+            <div class="student-icon d-flex">
+                <div class="p-icon">
+                	<mat-icon style="font-size:10px; margin: 0;">settings</mat-icon>
+
+                </div>
+                <div class="p-icon">
+                    <mat-icon style="font-size: 10px; margin:0;">input</mat-icon>
+
+                </div>
+            </div>
+        </div>
+       
+    </div>
+ </div>
+</mat-nav-list>

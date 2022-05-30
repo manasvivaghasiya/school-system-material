@@ -16,6 +16,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatDividerModule,
     MatListModule,
     MatSliderModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

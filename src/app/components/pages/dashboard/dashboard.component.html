@@ -1,1 +1,242 @@
-<p>dashboard works!</p>
+<div class="main-dashboard">
+  <div class="dashboard">
+    <!-- -----progressbar----- -->
+    <!-- <div class="progressbar">
+          
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title class="p-title">Total Students</mat-card-title>
+                    <mat-card-subtitle class="total-student-counter">2000</mat-card-subtitle>
+                    <mat-card-subtitle style="margin: 0; margin-top: 2px;"><img src="../../assets/student-progress.png"  alt=""></mat-card-subtitle>
+                    <img src="../../assets/total-student.png" style="height: 1.7cm;" alt="">
+                </mat-card-title-group>
+            </mat-card>
+
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title  class="p-title">New Students</mat-card-title>
+                    <mat-card-subtitle  class="new-student-counter">500</mat-card-subtitle>
+                    <mat-card-subtitle  style="margin: 0; margin-top: 2px;"><img src="../../assets/new-student-progress.png" alt="">
+                    </mat-card-subtitle>
+                    <img src="../../assets/new-student.png"  style="height: 1.7cm;"  alt="">
+
+                </mat-card-title-group>
+            </mat-card>
+
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title  class="p-title">Total course</mat-card-title>
+                    <mat-card-subtitle  class="total-course-counter">40</mat-card-subtitle>
+                    <mat-card-subtitle  style="margin: 0; margin-top: 2px;"> <img src="../../assets/course-progress.png" alt=""></mat-card-subtitle>
+                    <img src="../../assets/total-courses.png"  style="height: 1.7cm;"  alt="">
+
+                </mat-card-title-group>
+            </mat-card>
+
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title  class="p-title">Visitors</mat-card-title>
+                    <mat-card-subtitle  class="visitor-counter">2000</mat-card-subtitle>
+                    <mat-card-subtitle  style="margin: 0; margin-top: 2px;"><img src="../../assets/visitor-progress.png" alt="">
+                    </mat-card-subtitle>
+                    <img src="../../assets/visitors.png"  style="height: 1.7cm;"  alt="">
+
+                </mat-card-title-group>
+            </mat-card>
+
+        </div> -->
+    <mat-grid-list
+      [cols]="breakpoint"
+      rowHeight="2:1.5"
+      (window:resize)="onResize($event)"
+    >
+      <!-- -----total-student--- -->
+      <mat-grid-tile>
+        <mat-card class="example-card total-student-card">
+          <mat-card-title-group>
+            <mat-card-title class="p-title">Total Students</mat-card-title>
+            <mat-card-subtitle class="total-student-counter"
+              >2000</mat-card-subtitle
+            >
+            <mat-card-subtitle
+              style="margin: 0; margin-top: 2px; width: 140px; height: 7px"
+              ><mat-progress-bar
+                mode="determinate"
+                value="40"
+              ></mat-progress-bar
+            ></mat-card-subtitle>
+            <img
+              src="../../assets/total-student.png"
+              style="width: 74px; height: 74px"
+              alt=""
+            />
+          </mat-card-title-group>
+        </mat-card>
+      </mat-grid-tile>
+      <!-- ----new-student---- -->
+      <mat-grid-tile>
+        <mat-card class="example-card new-student-card">
+          <mat-card-title-group>
+            <mat-card-title class="p-title">New Students</mat-card-title>
+            <mat-card-subtitle class="new-student-counter"
+              >500</mat-card-subtitle
+            >
+            <mat-card-subtitle
+              style="margin: 0; margin-top: 2px; width: 140px; height: 7px"
+              ><mat-progress-bar
+                mode="determinate"
+                value="40"
+              ></mat-progress-bar
+            ></mat-card-subtitle>
+            <img
+              src="../../assets/new-student.png"
+              style="width: 74px; height: 74px"
+              alt=""
+            />
+          </mat-card-title-group>
+        </mat-card>
+      </mat-grid-tile>
+      <!-- -----total-course----- -->
+      <mat-grid-tile>
+        <mat-card class="example-card total-course-card">
+          <mat-card-title-group>
+            <mat-card-title class="p-title">Total course</mat-card-title>
+            <mat-card-subtitle class="total-course-counter"
+              >40</mat-card-subtitle
+            >
+            <mat-card-subtitle
+              style="margin: 0; margin-top: 2px; width: 140px; height: 7px"
+              ><mat-progress-bar
+                mode="determinate"
+                value="40"
+              ></mat-progress-bar
+            ></mat-card-subtitle>
+            <img
+              src="../../assets/total-courses.png"
+              style="width: 74px; height: 74px"
+              alt=""
+            />
+          </mat-card-title-group>
+        </mat-card>
+      </mat-grid-tile>
+      <!-- -----visitors------- -->
+      <mat-grid-tile>
+        <mat-card class="example-card visitors-card">
+          <mat-card-title-group>
+            <mat-card-title class="p-title">Visitors</mat-card-title>
+            <mat-card-subtitle class="visitor-counter">2000</mat-card-subtitle>
+            <mat-card-subtitle
+              style="margin: 0; margin-top: 2px; width: 140px; height: 7px"
+              ><mat-progress-bar
+                mode="determinate"
+                value="40"
+              ></mat-progress-bar
+            ></mat-card-subtitle>
+            <img
+              src="../../assets/visitors.png"
+              style="width: 74px; height: 74px"
+              alt=""
+            />
+          </mat-card-title-group>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <!-- -----sport-student-list------>
+    <div class="sport-student-list-table">
+        <div class="sport-list">
+            <div >
+                <h3 class="sport" style="font-weight:500;">Sport Student List</h3>
+            </div>
+            <div>
+                <img src="../../assets/rotate.png" class="list-icon" alt="">
+                <img src="../../assets/list-down.png" class="list-icon" alt="">
+                <img src="../../assets/close.png" class="list-icon" alt="">
+            </div>
+        </div>
+        <div class="list">
+            <div>
+                <button mat-button style="background-color:#333340; color:white;">	<mat-icon>add</mat-icon>Add New</button>
+            </div>
+            <div class="pdf-icons">
+                <img src="../../assets/pdf.png" class="list-icon" alt="">
+                <img src="../../assets/save.png" class="list-icon" alt="">
+                <button mat-button class="print">print
+                <img src="../../assets/print.png" class="list-icon" alt=""></button>
+            </div>
+        </div>
+        <div class="student-list">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" >
+         
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+                    <!-- Position Column -->
+            <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef> select. </th>
+                  <td mat-cell *matCellDef="let row">
+                    <mat-checkbox >
+                    </mat-checkbox>
+              </ng-container>
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="StudentName">
+              <th mat-header-cell *matHeaderCellDef> Student Name. </th>
+              <td mat-cell *matCellDef="let element"> {{element.StudentName}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="AssignedCoach">
+              <th mat-header-cell *matHeaderCellDef> Assigned Coach </th>
+              <td mat-cell *matCellDef="let element" style="color: #3F8DFD;"> {{element.AssignedCoach}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="Date">
+              <th mat-header-cell *matHeaderCellDef> Date </th>
+              <td mat-cell *matCellDef="let element"> {{element.Date}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="Time">
+              <th mat-header-cell *matHeaderCellDef> Time </th>
+              <td mat-cell *matCellDef="let element"> {{element.Time}} </td>
+            </ng-container>
+
+            <!-- ---Action column--- -->
+            <ng-container matColumnDef="Action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                
+                    <td mat-cell *matCellDef="let element"><button mat-button [ngStyle]="{'background-color':element.colorName}"> {{element.Action}}  <mat-icon>keyboard_arrow_down</mat-icon></button>   </td>
+              </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+  
+  <!-- -----chart---------- -->
+  <div class="student-chart-list">
+    <div class="list-chart">
+                <div class="chart-info">
+                    <div >
+                        <h3 class="sport" style="font-weight:500;">Sport Student List</h3>
+                    </div>
+                    <div>
+                        <img src="../../assets/rotate.png" class="list-icon" alt="">
+                        <img src="../../assets/list-down.png" class="list-icon" alt="">
+                        <img src="../../assets/close.png" class="list-icon" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="student-chart">
+                    <div id="chart">
+                    </div>
+                </div>
+          
+    </div>
+  
+</div>
+
+
+  </div>
+</div>

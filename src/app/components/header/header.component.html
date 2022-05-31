@@ -1,6 +1,6 @@
 <mat-toolbar>
-    <mat-toolbar-row class="justify-conetnt-between school-header">
-      <!-- <button mat-icon-button class="menu"><mat-icon>menu</mat-icon></button>
+    <mat-toolbar-row class="school-header">
+      <button mat-icon-button class="menu"><mat-icon>menu</mat-icon></button>
       <div class="mr-2 ml-auto header d-flex">
         <div class="col-3">
             <div class="student-name">
@@ -8,25 +8,43 @@
                 <p class="Nav-name">Welcome, Henna Baker's</p>
             </div>
         </div>
-        <div class=" header-info col-9 d-flex">
-            <div class="d-flex">
-                <img src="../../assets/iceland.png" class="iceland-flag" alt="">
-                <h1 class="language">English</h1>
-            </div>
-
-            <div class="d-flex">
-                <mat-icon>notifications_none</mat-icon>
-                <mat-icon> mail_outline</mat-icon>
-            </div>
-
+       
+      </div>
+      <div class=" header-info col-9">
+        <div class="language-title">
+            <img src="../../assets/iceland.png" class="iceland-flag" alt="">
+            <h1 class="language">English</h1>
         </div>
-        
-      </div> -->
-      <mat-grid-list cols="2"  rowHeight="1:1">
+
+        <div class="icons" >
+            <mat-icon class="notification">notifications_none</mat-icon>
+            <mat-icon class="mail"> mail_outline</mat-icon>
+        </div>
+        <div class="admin-profile">
+          <img src="../../assets/admin-profile.png" class="admin-image" alt="">
+          <div class="admin-name">
+              <h2 class="m-0 a-name ">clay johnson</h2>
+              <p class="m-0 " style="font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(106, 106, 106, 0.5);">Admin Staff</p>
+          </div>
+          <div >
+              <img src="../../assets/drop-down.png" class="drop-down"   alt="">
+          </div>
+      </div>
+
+    </div>
+    
+      <!-- ----admin-profile----- -->
+     
+      <!-- <mat-grid-list cols="2"  rowHeight="1:1">
         <mat-grid-tile>1</mat-grid-tile>
         <mat-grid-tile>2</mat-grid-tile>
         <mat-grid-tile>3</mat-grid-tile>
         <mat-grid-tile>4</mat-grid-tile>
-      </mat-grid-list>
+      </mat-grid-list> -->
     </mat-toolbar-row>
 </mat-toolbar>

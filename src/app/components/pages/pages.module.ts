@@ -10,6 +10,13 @@ import { CoursesComponent } from './courses/courses.component';
 import { LibraryComponent } from './library/library.component';
 import { DepartmentComponent } from './department/department.component';
 import { StaffComponent } from './staff/staff.component';
+import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatTableModule} from '@angular/material/table';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -25,7 +32,14 @@ import { StaffComponent } from './staff/staff.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatTableModule,
+    MatCheckboxModule,
+    MatIconModule
   ]
 })
 export class PagesModule { }

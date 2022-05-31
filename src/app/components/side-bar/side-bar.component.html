@@ -15,14 +15,17 @@
         </div>
        <div>
            <div style="margin-top: 18px;">
-            <a mat-list-item routerLink="/dashboard" routerLinkActivate="list-item-active">
+            <a mat-list-item routerLink="/dashboard" routerLinkActivate="list-item-active" class="title-name">
+                <div style="display: flex; justify-content: space-between;">
+                    <mat-icon>dashboard</mat-icon> dashboard
+                   
                
-                    <mat-icon>dashboard</mat-icon> dashboard   
-
-                    <mat-icon>keyboard_arrow_down</mat-icon>
-            </a>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+         
           
-            <a mat-list-item routerLink="/event-management" routerLinkActivate="list-item-active">
+            </a>
+          <a mat-list-item routerLink="/event-management" routerLinkActivate="list-item-active">
                 <mat-icon>event</mat-icon>Event-Management
             </a>
             <a mat-list-item routerLink="/professor" routerLinkActivate="list-item-active">

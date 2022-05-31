@@ -7,13 +7,52 @@ mat-toolbar{
 }
 .school-header{
     margin-top: 18px;
+    justify-content: space-between;
 }
 .header{
     display: flex;
 }
+
 mat-grid-tile {
     background: lightblue;
   }
+  .header-info{
+    display: flex;
+  }
+  .language-title{
+      display: flex;
+      margin-right: 20px;
+  }
+  .icons{
+    margin-top:6px;
+     margin-right:20px;
+  }
+  .notification{
+      margin-right: 20px;
+  }
+  .language{
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .iceland-flag{
+      height: 1cm;
+      border-radius: 13px 13px 13px 13px;
+      margin-right: 20px;
+  }
+  .admin-profile{
+    display: flex;
+  }
+  .admin-image{
+    height: 1.2cm;
+    margin-right: 12px;
+  }
+  .drop-down{
+    height: 0.5cm;
+    width: 21px;
+    margin-top: 17px;
+    margin-left: 6px;
+}
+
 // --------
 .Nav-name{
     font-size: small;

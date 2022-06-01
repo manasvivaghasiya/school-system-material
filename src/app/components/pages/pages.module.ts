@@ -17,6 +17,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatProgressBarModule,
     MatTableModule,
     MatCheckboxModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class PagesModule { }

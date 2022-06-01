@@ -1,4 +1,11 @@
-
+.main-sidebar{
+    width: 240px;
+}
+@media (max-width: 770px) {
+    .main-sidebar {
+        display: none;
+    }
+}
 .sidebar{
     margin: 3px 17px;
     margin-top:14px
@@ -23,6 +30,7 @@
 .title-name{
     display: flex;
 }
+
 .logo{
     height: 0.5cm;
     margin-right: 15px;
@@ -90,6 +98,18 @@
         }
     }
 }
+
+:host ::ng-deep .mat-list-base {
+    .mat-list-item {
+        .mat-list-item-content{
+            display: flex !important;
+            justify-content: space-between !important;
+        }
+        
+    }
+  
+} 
+
 .mat-list-item:hover{
     color: white;
 }
@@ -148,3 +168,21 @@ margin: 1px 9px;
   display: flex;
   justify-content: center;
 }
+
+
+
+.dash-name{
+    margin-left: 22px;
+    margin-top: 5px;
+}
+  
+// :host ::ng-deep .mat-list-base {
+//     .mat-list-item {
+//         .mat-list-item-content{
+//             display: flex !important;
+//             justify-content: space-between !important;
+//         }
+        
+//     }
+  
+// } 

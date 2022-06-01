@@ -92,3 +92,18 @@ button{
         width: 160px;
     }
 }
+
+@media (max-width: 712px) {
+   
+    .admin-name{
+        display:none;
+    }  
+}
+@media (max-width: 992px) {
+    .student-name{
+        display:none;
+    }
+    .icons{
+        display: flex;
+    }
+}

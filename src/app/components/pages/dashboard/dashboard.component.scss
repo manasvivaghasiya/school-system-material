@@ -1,6 +1,7 @@
 .main-dashboard {
   background-color: #f5f5f9;
   border-radius: 40px 0px 0px 0px;
+  width: 100%;
 }
 .dashboard {
   padding: 24px;
@@ -16,7 +17,7 @@
   align-items: center;
   border-radius: 15.1114px;
   width: 84%;
-  height: 11vh;
+  // height: 11vh;
 }
 
 .p-title {
@@ -59,7 +60,7 @@
 }
 
 .dashboard .mat-grid-list {
-    padding-bottom: calc(1 * ((11.75% - 0.75px) * 1) + 0px + 0px) !important;
+    padding-bottom: calc(1 * ((10.75% - 0.75px) * 1) + 0px + 0px) !important;
   .mat-grid-tile {
     padding-top: calc((9.75% - 0.75px) * 1 + 0px) !important;
   }
@@ -124,6 +125,7 @@
     text-align: center;
     font-weight: 500;
 font-size: 18px;
+background-color: #f5f5f9;
 }
 .print{
     background-color: #f5f5f9;
@@ -170,4 +172,20 @@ table tr:last-child td /*To remove the last border*/
     justify-content: space-between;
     align-items: center;
     padding: 6px 13px 0px 11px;
+}
+
+@media (max-width: 1736px) {
+   
+  .example-card .mat-progress-bar {
+    width: 100%;
+  }  
+}
+@media (max-width: 1372px) {
+   
+  .dashboard .mat-grid-list {
+    padding-bottom: calc(1 * ((14.75% - 0.75px) * 1) + 0px + 0px) !important;
+  .mat-grid-tile {
+    padding-top: calc((12.75% - 0.75px) * 1 + 0px) !important;
+  }
+}
 }

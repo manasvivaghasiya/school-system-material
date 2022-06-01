@@ -13,39 +13,74 @@
             <input type="search" class="form-control text-search" placeholder="Search">
             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
         </div>
-       <div>
+       <div class="icon-fix">
            <div style="margin-top: 18px;">
-            <a mat-list-item routerLink="/dashboard" routerLinkActivate="list-item-active" class="title-name">
-                <div style="display: flex; justify-content: space-between;">
-                    <mat-icon>dashboard</mat-icon> dashboard
-                   
-               
-                <mat-icon>keyboard_arrow_down</mat-icon>
-            </div>
+            <a mat-list-item routerLink="/dashboard" routerLinkActivate="list-item-active">
+                <div  class="title-name">
+                    <img src="../../assets/dashboard.svg" class="d-img" alt="">
+                    <p  class="dash-name">dashboard</p>
+                </div>
          
           
             </a>
           <a mat-list-item routerLink="/event-management" routerLinkActivate="list-item-active">
-                <mat-icon>event</mat-icon>Event-Management
+              <div  class="title-name">
+                <img src="../../assets/event-management.svg" class="d-img" alt="">
+                <p  class="dash-name">Event-Management</p>
+              </div>
+               
             </a>
             <a mat-list-item routerLink="/professor" routerLinkActivate="list-item-active">
-                <mat-icon>perm_identity</mat-icon>Professors<mat-icon>keyboard_arrow_down</mat-icon>
+                <div  class="title-name">
+                    <img src="../../assets/professor.svg" class="d-img" alt="">
+                    <!-- <mat-icon>perm_identity</mat-icon> -->
+                    <p  class="dash-name">Professors</p>
+                </div>
+                <mat-icon>keyboard_arrow_down</mat-icon>
             </a>
     
         <a mat-list-item routerLink="/student" routerLinkActivate="list-item-active">
-            <mat-icon>assignment_ind</mat-icon>Students<mat-icon>keyboard_arrow_down</mat-icon>
+            <div  class="title-name">
+                <img src="../../assets/student.svg" class="d-img" alt="">
+
+               <p  class="dash-name">Students</p>
+                
+
+            </div>
+            <mat-icon>keyboard_arrow_down</mat-icon>
         </a>
-        <a mat-list-item routerLink="/courses" routerLinkActivate="list-item-active">
-            <mat-icon>event</mat-icon>Courses	<mat-icon>keyboard_arrow_down</mat-icon>
+        <a mat-list-item routerLink="/courses" routerLinkActivate="list-item-active" class="menu-list">
+            <div  class="title-name">
+                <img src="../../assets/courses.svg" class="d-img" alt="">
+
+                <p class="dash-name">Courses</p>
+            </div>
+            	<mat-icon>keyboard_arrow_down</mat-icon>
         </a>
         <a mat-list-item routerLink="/library" routerLinkActivate="list-item-active">
-            <mat-icon>event</mat-icon> Library<mat-icon>keyboard_arrow_down</mat-icon>
+            <div  class="title-name">
+                <img src="../../assets/library.svg" class="d-img" alt="">
+                <p  class="dash-name">Library</p>
+                
+
+            </div>
+            <mat-icon>keyboard_arrow_down</mat-icon>
         </a>
         <a mat-list-item routerLink="/department" routerLinkActivate="list-item-active">
-            <mat-icon>event</mat-icon> Department<mat-icon>keyboard_arrow_down</mat-icon>
+            <div  class="title-name">
+                <img src="../../assets/department.svg" class="d-img" alt="">
+                <p  class="dash-name">Department</p>
+                
+
+            </div>
+            <mat-icon>keyboard_arrow_down</mat-icon>
         </a>
         <a mat-list-item routerLink="/staff" routerLinkActivate="list-item-active">
-            <mat-icon>event</mat-icon>Staff<mat-icon>keyboard_arrow_down</mat-icon>
+            <div  class="title-name">
+                <img src="../../assets/staff.svg" class="d-img" alt="">
+                <p  class="dash-name">Staff</p>
+            </div>
+            <mat-icon>keyboard_arrow_down</mat-icon>
         </a>
        </div>
        

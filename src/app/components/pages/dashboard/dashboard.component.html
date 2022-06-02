@@ -2,14 +2,15 @@
   <div class="dashboard">
     <!-- -----progressbar----- -->
     <!-- <div class="progressbar">
-          
+
+     
             <mat-card class="example-card">
-                <mat-card-title-group>
-                    <mat-card-title class="p-title">Total Students</mat-card-title>
-                    <mat-card-subtitle class="total-student-counter">2000</mat-card-subtitle>
-                    <mat-card-subtitle style="margin: 0; margin-top: 2px;"><img src="../../assets/student-progress.png"  alt=""></mat-card-subtitle>
-                    <img src="../../assets/total-student.png" style="height: 1.7cm;" alt="">
-                </mat-card-title-group>
+              <mat-card-title-group>
+                  <mat-card-title class="p-title">Total Students</mat-card-title>
+                  <mat-card-subtitle class="total-student-counter">2000</mat-card-subtitle>
+                  <mat-card-subtitle style="margin: 0; margin-top: 2px;"><img src="../../assets/student-progress.png"  alt=""></mat-card-subtitle>
+                  <img src="../../assets/total-student.png" style="height: 1.7cm;" alt="">
+              </mat-card-title-group>
             </mat-card>
 
             <mat-card class="example-card">
@@ -22,8 +23,8 @@
 
                 </mat-card-title-group>
             </mat-card>
-
-            <mat-card class="example-card">
+        
+              <mat-card class="example-card">
                 <mat-card-title-group>
                     <mat-card-title  class="p-title">Total course</mat-card-title>
                     <mat-card-subtitle  class="total-course-counter">40</mat-card-subtitle>
@@ -43,15 +44,21 @@
 
                 </mat-card-title-group>
             </mat-card>
+        
+          
 
         </div> -->
+
+
+
     <mat-grid-list
       [cols]="breakpoint"
-      rowHeight="2:1.5"
+      rowHeight="2:3.5"
       (window:resize)="onResize($event)"
+      class="breakPoint"
     >
       <!-- -----total-student--- -->
-      <mat-grid-tile>
+      <mat-grid-tile class="mat-grid-tile-one">
         <mat-card class="example-card total-student-card">
           <mat-card-title-group>
             <mat-card-title class="p-title">Total Students</mat-card-title>
@@ -74,7 +81,7 @@
         </mat-card>
       </mat-grid-tile>
       <!-- ----new-student---- -->
-      <mat-grid-tile>
+      <mat-grid-tile  class="mat-grid-tile-two">
         <mat-card class="example-card new-student-card">
           <mat-card-title-group>
             <mat-card-title class="p-title">New Students</mat-card-title>
@@ -97,7 +104,7 @@
         </mat-card>
       </mat-grid-tile>
       <!-- -----total-course----- -->
-      <mat-grid-tile>
+      <mat-grid-tile class="mat-grid-tile-three">
         <mat-card class="example-card total-course-card">
           <mat-card-title-group>
             <mat-card-title class="p-title">Total course</mat-card-title>
@@ -120,7 +127,7 @@
         </mat-card>
       </mat-grid-tile>
       <!-- -----visitors------- -->
-      <mat-grid-tile>
+      <mat-grid-tile class="mat-grid-tile-four">
         <mat-card class="example-card visitors-card">
           <mat-card-title-group>
             <mat-card-title class="p-title">Visitors</mat-card-title>
@@ -142,6 +149,8 @@
       </mat-grid-tile>
     </mat-grid-list>
 
+
+
     <!-- -----sport-student-list------>
     <div class="sport-student-list-table">
         <div class="sport-list">
@@ -156,13 +165,13 @@
         </div>
         <div class="list">
             <div>
-                <button mat-button style="background-color:#333340; color:white;">	<mat-icon>add</mat-icon>Add New</button>
+                <button mat-button class="add-new" style="background-color:#333340; color:white;">	<mat-icon>add</mat-icon>Add New</button>
             </div>
             <div class="pdf-icons">
-                <img src="../../assets/pdf.png" class="list-icon" alt="">
-                <img src="../../assets/save.png" class="list-icon" alt="">
+                <img src="../../assets/pdf.png" class="list-pdf-icon" alt="">
+                <img src="../../assets/save.png" class="list-pdf-icon" alt="">
                 <button mat-button class="print">print
-                <img src="../../assets/print.png" class="list-icon" alt=""></button>
+                <img src="../../assets/print.png" class="list-pdf-icon" alt=""></button>
             </div>
         </div>
         <div class="student-list">
@@ -250,6 +259,5 @@
       </mat-grid-list>
     -->
    
-
-  </div>
 </div>
+</div> 

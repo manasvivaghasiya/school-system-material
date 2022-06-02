@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
+
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  { name: 'Sarah smith', department: 'Mechanical', degree:'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'kurt Ross', department: 'Computer', degree: 'M.com,B.ED',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Roberto Castro', department:'Science', degree: 'B.Sc,M.Sc',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Zoe Castro', department: 'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Peter Graham', department:'Mechanical', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Patsy Marshall', department:  'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Teresa West', department: 'Science', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Vera Larson', department: 'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Gabriella Harris', department:'Music', degree: 'B.A',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  { name: 'Vera Lasrson', department:'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
 ];
 
 @Component({
@@ -20,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./professors.component.scss']
 })
 export class ProfessorsComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['name', 'department', 'degree', 'mobileNo','joiningDate','action'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   constructor() { }
@@ -37,7 +39,9 @@ export class ProfessorsComponent implements OnInit {
 
 export interface PeriodicElement {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  department: string;
+  degree: string;
+  mobileNo: number;
+  joiningDate:string;
+  action:string;
 }

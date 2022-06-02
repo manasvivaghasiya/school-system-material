@@ -13,7 +13,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss'] 
+  styleUrls: ['./dashboard.component.scss'] ,
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class DashboardComponent implements OnInit {
   displayedColumns: string[] = ['select','StudentName', 'AssignedCoach', 'Date', 'Time','Action'];
@@ -28,7 +31,16 @@ export class DashboardComponent implements OnInit {
  
   ngOnInit(): void {
     this.chart()
-    this.breakpoint = (window.innerWidth <= 400) ? 1 : 4;
+    // if('this.breakpoint = (window.innerWidth <= 1200) ? 1 : 4;'){
+    //   else()
+    // }
+    // this.breakpoint = (window.innerWidth <= 400) ? 1 : 2;
+    // this.breakpoint = (window.innerWidth <= 700) ? 1 : 2;
+      // this.breakpoint = (window.innerWidth <=1000) ? 1 : 4;
+      this.breakpoint = (window.innerWidth >= 1200) ? 4 : window.innerWidth <= 1200  && window.innerWidth >= 600? 2 : 1;
+ 
+
+
   }
   chart(){
     var options = {
@@ -47,11 +59,13 @@ export class DashboardComponent implements OnInit {
 
       series: [{
         name: 'sales',
-        data: [0,250,500,750]
+        data: [0,250,500,750],
+        colors:['#147AD6']
       },{
-        name: 'sales',
-        data: [550,700,250,0]
+        colors:['#147AD6'],
 
+        name: 'sales',
+        data: [550,700,250,0],
       }],
       xaxis: {
         // categories: [JAN,FEB,MAR,APR,MAY,JUN]
@@ -65,7 +79,7 @@ export class DashboardComponent implements OnInit {
   
   }
   onResize(event:any) {
-    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 4;
+    this.breakpoint = (event.target.innerWidth >= 1200) ? 4 : event.target.innerWidth <= 1200  && event.target.innerWidth >= 600? 2 : 1;
   }
 
 }

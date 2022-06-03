@@ -24,6 +24,7 @@ export class DashboardComponent implements OnInit {
   breakpoint!: number;
   ngVersion: string = VERSION.full;
   matVersion: string = '5.1.0';
+  gridColumns = 4;
 
   
 

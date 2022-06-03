@@ -150,6 +150,9 @@ table tr:last-child td /*To remove the last border*/
 .mat-elevation-z8 {
     box-shadow:none !important;
 }
+.mat-elevation-z4{
+  border-radius: 12px;
+}
 .sport-student-list-table{
     margin: 0px 13px;
     background-color: white;
@@ -252,3 +255,14 @@ table tr:last-child td /*To remove the last border*/
 }
 
 
+mat-toolbar {
+  justify-content: space-between;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  margin-bottom: 16px;
+}

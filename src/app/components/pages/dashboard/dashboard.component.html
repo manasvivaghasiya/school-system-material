@@ -48,16 +48,111 @@
           
 
         </div> -->
+        <!-- -----progressbar----- -->
+        <div class="content">
+          <div fxLayout="row wrap" fxLayoutGap="15px grid">
+            <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.md="33%" fxFlex.sm="50%">
+              <mat-card class="mat-elevation-z4">
+                <mat-card-title-group>
+                  <mat-card-title class="p-title">Total Students</mat-card-title>
+
+                  <mat-card-subtitle class="new-student-counter"
+                    >2000</mat-card-subtitle>
+                  <mat-card-subtitle
+                    style="margin: 0; margin-top: 2px; width: 140px; height: 1.5cm;"
+                    ><mat-progress-bar
+                      mode="determinate"
+                      value="40"
+                    ></mat-progress-bar
+                  ></mat-card-subtitle>
+                  <img
+              src="../../assets/total-student.png"
+              style="width: 74px; height: 74px"
+              alt=""
+            />
+                </mat-card-title-group>
+              </mat-card>
+            </div>
+            <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.md="33%" fxFlex.sm="50%">
+              <mat-card class="mat-elevation-z4">
+                <mat-card-title-group>
+                  <mat-card-title class="p-title">New Students</mat-card-title>
+                  <mat-card-subtitle class="new-student-counter"
+                    >500</mat-card-subtitle
+                  >
+                  <mat-card-subtitle
+                    style="margin: 0; margin-top: 2px; width: 140px; height: 1.5cm;"
+                    ><mat-progress-bar
+                      mode="determinate"
+                      value="40"
+                    ></mat-progress-bar
+                  ></mat-card-subtitle>
+                  <img
+                    src="../../assets/new-student.png"
+                    style="width: 74px; height: 74px"
+                    alt=""
+                  />
+                </mat-card-title-group>
+              </mat-card>
+            </div>
+            <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.md="33%" fxFlex.sm="50%">
+              <mat-card class="mat-elevation-z4">
+                <mat-card-title-group>
+                  <mat-card-title class="p-title">Total course</mat-card-title>
+                  <mat-card-subtitle class="new-student-counter"
+                    >40</mat-card-subtitle
+                  >
+                  <mat-card-subtitle
+                    style="margin: 0; margin-top: 2px; width: 140px; height: 1.5cm;"
+                    ><mat-progress-bar
+                      mode="determinate"
+                      value="40"
+                    ></mat-progress-bar
+                  ></mat-card-subtitle>
+                  <img
+                  src="../../assets/total-courses.png"
+                  style="width: 74px; height: 74px"
+                  alt=""
+                />
+                </mat-card-title-group>
+              </mat-card>
+            </div>
+            <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.md="33%" fxFlex.sm="50%">
+              <mat-card class="mat-elevation-z4">
+                <mat-card-title-group>
+                  <mat-card-title class="p-title">Visitors</mat-card-title>
+
+                  <mat-card-subtitle class="new-student-counter"
+                    >2000</mat-card-subtitle
+                  >
+                  <mat-card-subtitle
+                    style="margin: 0; margin-top: 2px; width: 140px; height: 1.5cm;"
+                    ><mat-progress-bar
+                      mode="determinate"
+                      value="40"
+                    ></mat-progress-bar
+                  ></mat-card-subtitle>
+                  <img
+                  src="../../assets/visitors.png"
+                  style="width: 74px; height: 74px"
+                  alt=""
+                />
+                </mat-card-title-group>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------- -->
 
 
-
-    <mat-grid-list
+    <!-- <mat-grid-list
       [cols]="breakpoint"
       rowHeight="2:3.5"
       (window:resize)="onResize($event)"
       class="breakPoint"
     >
-      <!-- -----total-student--- -->
+      -----total-student---
       <mat-grid-tile class="mat-grid-tile-one">
         <mat-card class="example-card total-student-card">
           <mat-card-title-group>
@@ -80,7 +175,7 @@
           </mat-card-title-group>
         </mat-card>
       </mat-grid-tile>
-      <!-- ----new-student---- -->
+      ----new-student----
       <mat-grid-tile  class="mat-grid-tile-two">
         <mat-card class="example-card new-student-card">
           <mat-card-title-group>
@@ -103,7 +198,7 @@
           </mat-card-title-group>
         </mat-card>
       </mat-grid-tile>
-      <!-- -----total-course----- -->
+      -----total-course-----
       <mat-grid-tile class="mat-grid-tile-three">
         <mat-card class="example-card total-course-card">
           <mat-card-title-group>
@@ -126,7 +221,7 @@
           </mat-card-title-group>
         </mat-card>
       </mat-grid-tile>
-      <!-- -----visitors------- -->
+      -----visitors-------
       <mat-grid-tile class="mat-grid-tile-four">
         <mat-card class="example-card visitors-card">
           <mat-card-title-group>
@@ -147,7 +242,7 @@
           </mat-card-title-group>
         </mat-card>
       </mat-grid-tile>
-    </mat-grid-list>
+    </mat-grid-list> -->
 
 
 

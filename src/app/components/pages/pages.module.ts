@@ -20,6 +20,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -48,7 +49,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FlexLayoutModule
   ]
 })
 export class PagesModule { }

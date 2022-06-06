@@ -4,16 +4,16 @@ import {MatPaginator} from '@angular/material/paginator';
 
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { name: 'Sarah smith', department: 'Mechanical', degree:'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'kurt Ross', department: 'Computer', degree: 'M.com,B.ED',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Roberto Castro', department:'Science', degree: 'B.Sc,M.Sc',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Zoe Castro', department: 'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Peter Graham', department:'Mechanical', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Patsy Marshall', department:  'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Teresa West', department: 'Science', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Vera Larson', department: 'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Gabriella Harris', department:'Music', degree: 'B.A',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
-  { name: 'Vera Lasrson', department:'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png',name: 'Sarah smith', department: 'Mechanical', degree:'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'kurt Ross', department: 'Computer', degree: 'M.com,B.ED',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Roberto Castro', department:'Science', degree: 'B.Sc,M.Sc',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Zoe Castro', department: 'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Peter Graham', department:'Mechanical', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Patsy Marshall', department:  'Mathematics', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Teresa West', department: 'Science', degree: 'M.E',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Vera Larson', department: 'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Gabriella Harris', department:'Music', degree: 'B.A',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
+  {url:'../../assets/korea.png', name: 'Vera Lasrson', department:'Computer', degree: 'M.Com,B.Ed',mobileNo:999999999,joiningDate:'12/2/2022',action:'action'},
 ];
 
 @Component({
@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./professors.component.scss']
 })
 export class ProfessorsComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'department', 'degree', 'mobileNo','joiningDate','action'];
+  displayedColumns: string[] = ['url','name', 'department', 'degree', 'mobileNo','joiningDate','action'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   constructor() { }
@@ -38,6 +38,7 @@ export class ProfessorsComponent implements OnInit {
 }
 
 export interface PeriodicElement {
+  url:string;
   name: string;
   department: string;
   degree: string;

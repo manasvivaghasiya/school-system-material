@@ -32,6 +32,11 @@
             </div>
 
             <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                  <!-- student-img---- -->
+                  <ng-container matColumnDef="url">
+                    <th mat-header-cell *matHeaderCellDef></th>
+                    <td mat-cell *matCellDef="let element">  <img [src]='element.url' /> </td>
+                </ng-container>
 
                 <!-- Position Column -->
                 <ng-container matColumnDef="rollNo">
